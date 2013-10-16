@@ -1,0 +1,156 @@
+/* CSS Document */
+body{
+	margin:0;
+	background-color: #F0F0F0;
+}
+a{color:#000000; text-decoration:none }
+a:hover{ color:#FF0000;}
+.head{
+	width:990px;
+	hight:300px;
+	margin:0 auto;
+	float:none;
+}
+.right{
+	width:750px;
+	float:right;
+	height:175px;}
+.back_right{
+	width:750px;
+	float:right;
+	height:175px;}
+
+.Menu{
+	clear:both;
+	height:43px;
+	background:url(../images/nav.gif) no-repeat;	
+	color:#900;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	}	
+.Menu ul{ list-style:none; margin-left:20px;}
+.Menu ul li{ float:left; color:#FFF; margin-top:8px; padding: 0px 15px;}
+.Menu ul li a{ text-decoration:none; color:#FFFFFF; font-size:14px; font-weight:bold;}
+.Menu ul li a:hover{ text-decoration:none; color:#FFCC00; font-size:14px; font-weight:bold;}
+.right .lv{ float:right;font-size:12px; margin-bottom:10px;}
+.con{width:550px; float:right;}
+.tongzhi{background:url(../images/icon_announcement.gif) no-repeat; text-indent:2em; font-size:12px; padding-bottom:5px;}
+ *{ margin:0;padding:0;}
+ body{ font:normal 12px Verdana, Arial, Helvetica, sans-serif; }
+ #warpper{ position:relative;}
+ #warpper a{ text-decoration:underline; cursor:pointer; font-weight:bold;}
+ dl{ height:18px; line-height:18px; padding:0 10px;}
+ dt,.normal{ float:left; padding:0 10px; border-right:1px solid #ccc; text-decoration:none; width:auto; cursor:pointer;}
+ dt.over{ position:relative;border:1px solid #666; padding:0 10px 15px 10px; border-bottom:1px solid #FFFFFF; margin:-1px 0 0 -1px; z-index:1000; color:#ff6026; text-decoration:underline; background:#FFFFFF; height:5px; }
+ #warpper li{ float:left; list-style-type:none; margin:5px 10px; width:220px;}
+ dl dd{ position:absolute; width:100%; left:0;top:20px!important; border:1px solid #666; background:#FFFFFF; filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=120, color=#cccccc); padding:10px 0;}
+ .block{ display:block; font-size: 14px;}
+ .none{ display:none;}
+ .link ul{ width:370px; border:0px #F00 solid; float:left;}
+ .link li{ width:120px; float:left; list-style:none; border:0px #F00 solid; line-height:36px;}
+ .connect{ width:178px; border:0px #F00 solid; float:right; height:100px; background:url(../images/getpeople.jpg) no-repeat right bottom;}
+ .xx{ background:#000; width:60px; margin-top:10px; margin-left:5px; color:#FFF; font-weight:800; padding-left:8px;}
+ .yy{ font-size:16px; color:#F00; font-weight:bolder;margin-top:20px; margin-left:5px; }
+ .zz{margin-top:20px; margin-left:5px; color:#666666;}
+ .modle{ clear:both;}
+ .modle li{ list-style:none; float:left; width:70px; height:93px; margin-left:7px;}
+ .footer{ border:0px solid #F00; width:auto; height:100px; clear:both; background:#595A5F; margin-top:10px;}
+ .ft_left{width:49%; float:left; border-right:1px #333 solid; margin-top:25px; height:40px; text-align:right;}
+ .ft_right{float:right; width:50%; color:#FFF;margin-top:20px;}
+
+
+
+.c_left{
+ width:23%;
+ height:270px;
+ float:left;
+ margin-top:10px;
+ margin-bottom:10px;
+ }
+ 
+ .c_back_left{
+ width:23%;
+ height:1000px;
+ float:left;
+ margin-top:10px;
+ margin-bottom:10px;
+ }
+ 
+ .c_left1{
+ width:100%;
+ height:61px;
+ margin:auto;
+ background:url(../images/nav_menu_header.jpg) no-repeat center;
+ }
+ .c_left2{
+ width:100%;
+ height:196px;
+ margin:auto;
+ background:url(../images/nav_menu_content.jpg) repeat-y center;
+ font-size:14px;
+ font-weight:bold;
+ }
+ .c_left2 ul{ width:250px; border:0px #F00 solid; float:none;}
+ .c_left2 li{ width:250px; float:left; list-style:none;  margin:5px 30px; border:0px #F00 solid; line-height:20px;}
+  .c_left3{
+ width:100%;
+ height:13px;
+ margin:auto;
+ background:url(../images/nav_menu_footer.jpg) no-repeat center;
+ }
+ .c_right{
+ width:75%;
+ height:270px;
+ float:right;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+.content2{
+width:990px;
+}
+
+.c_x_right{ width:300px; hight:600px; float:right; margin-top:30px;}
+.c_x_right_top{  width:300px; height:9px; background:url(../images/gonggaotop.jpg) no-repeat top right}
+.c_x_right_con_top{ margin:0px 24px; font-weight:bold; font-size:18px; color:#FF0000; float:center; width:270px; height:30px; background:url(../images/p.gif) repeat-x bottom;}
+.c_x_right_mid{ width:300px; height:330px; background:url(../images/gonggaomid.jpg) repeat-y top right}
+.c_x_right_down{ width:300px; height:9px; background:url(../images/gonggaodown.jpg) no-repeat  bottom right}
+.c_x_right_gaikuang{font-size:18px; color:#FF0000; font-weight:bold; float:right;  width:140px; height:30px; background:url(../images/p.gif) repeat-x bottom; margin-top:22px; }
+.c_x_right_wangluo{font-size:18px; color:#FF0000; font-weight:bold; float:right;  width:140px; height:30px; background:url(../images/p.gif) repeat-x bottom; margin-top:22px; margin-left:5px;}
+.c_x_right_gaikuang_con{ float:right;  width:140px; height:60px; }
+.c_x_right_wangluo_con{ float:right;  width:140px; height:60px; margin-left:5px;}
+.c_x_right_jiaoshi{font-size:18px; color:#FF0000; font-weight:bold; float:right;  width:280px; height:30px; background:url(../images/p.gif) repeat-x bottom; margin-top:22px; }
+.c_x_right_jiaoshi_con{ float:right;  width:280px; height:210px;}
+
+.c_x_left{ width:690px; height:600px; float:left;}
+.c_x_left_pic{ width:690px; height:350px; float:left; margin-top: 32px;}
+.c_x_left_xinlin{font-size:18px; color:#0033FF; font-weight:bold; float:left;  width:690px; height:30px; background:url(../images/p.gif) repeat-x bottom; margin-top:49px;}
+.c_x_left_xinlin_con{  float:left;  width:690px; height:150px; background:url(../images/p.gif) repeat-x bottom; margin-top:10px;}
+.c_x_left_xinlin_con table{ font-size: 14px;}
+
+.c_x_center_yingdi{font-size:18px; color:#0033FF; font-weight:bold; float:left; width:990px; height:30px; background:url(../images/p.gif) repeat-x bottom; margin-top:20px;}
+.c_x_center_yingdi_con{ float:left; width:990px; height:170px; background:url(../images/p.gif) repeat-x bottom; }
+
+.c_x_center_tuijian{font-size:18px; color:#0033FF; font-weight:bold; float:left; width:320px; height:30px; background:url(../images/p.gif) repeat-x bottom; margin-top:20px; margin-left:10px;}
+.c_x_center_tuijian_con{ float:left; width:320px; height:200px; background:url(../images/p.gif) repeat-x bottom; margin-left:10px;}
+
+#demo {
+background: #FFF;
+overflow:hidden;
+border: 1px dashed #CCC;
+width: 990px;
+margin-top:10px;
+}
+#demo img {
+border: 10px solid #F2F2F2;
+}
+#indemo {
+float: left;
+width: 800%;
+}
+#demo1 {
+float: left;
+}
+#demo2 {
+float: left;
+}

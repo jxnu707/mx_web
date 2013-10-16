@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="hello" location="0,0" size="0,0">
+    <action name="login" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="false" />
+    </action>
+    <action name="loginOut" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="messageList" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="adminMessageList" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="adminMessageList2" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="messageListByType" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="messageListByType2" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="mainPage" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="getMessage" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="getShiPin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addMessageInput" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addShiPinInput" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addMessage" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+    </action>
+    <action name="addShiPin" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+    </action>
+    <action name="deleteMessage" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteMessage2" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="liuyan" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addliuyan" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateliuyaninput" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateliuyan" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteliuyan" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="deleteAdmin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addAdmin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="queryAdmin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="hello2" location="0,0" size="0,0">
+    <action name="fileDownload" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+</Struts2Diagram>
+

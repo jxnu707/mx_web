@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name = "struts.multipart.maxSize" value = "209715200" />
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <constant name="struts.devMode" value="false" />
+    <package name="default" namespace="/" extends="struts-default">
+		<action name="mainPage" class="com.jxnu.student.action.MainPageAction" method="getNews">
+            <result name="success">/main_page2.jsp</result>
+        </action>
+        
+        <!-- newsAction -->
+        <action name="getNews" class="com.jxnu.student.action.NewsAction" method="getNews">
+            <result name="success">/page2.jsp</result>
+        </action>
+        
+        <action name="getNews_search" class="com.jxnu.student.action.NewsAction" method="getNews">
+            <result name="success">/news_search.jsp</result>
+        </action>
+        
+        <action name="getNews_child" class="com.jxnu.student.action.NewsAction" method="getchild">
+            <result name="success">/page.jsp</result>
+        </action>
+        
+        <action name="getHot" class="com.jxnu.student.action.NewsAction" method="getHot1">
+            <result name="success">/hot.jsp</result>
+        </action>
+        
+        <action name="getdinwei" class="com.jxnu.student.action.NewsAction" method="getDingWei">
+            <result name="success">/dingWei.jsp</result>
+        </action>
+        
+        <action name="getDaoHang" class="com.jxnu.student.action.NewsAction" method="getdaohang">
+            <result name="success">/daohang.jsp</result>
+        </action>
+        
+        <action name="getSearch" class="com.jxnu.student.action.NewsAction" method="getSearch">
+            <result name="success">/page.jsp</result>
+        </action>
+        
+        <action name="getSizheng" class="com.jxnu.student.action.NewsAction" method="getsizheng">
+            <result name="success">/sizheng.jsp</result>
+        </action>
+        
+        <action name="getBumen" class="com.jxnu.student.action.NewsAction" method="getbumen">
+            <result name="success">/bumen.jsp</result>
+        </action>
+        
+        <action name="getXuesheng" class="com.jxnu.student.action.NewsAction" method="getxuesheng">
+            <result name="success">/xuesheng.jsp</result>
+        </action>
+        
+        <action name="getXinlin" class="com.jxnu.student.action.NewsAction" method="getxinli">
+            <result name="success">/xinli.jsp</result>
+        </action>
+        
+        <action name="fileDownload" class="com.jxnu.student.action.NewsAction" method="fileDownload"> 
+            <result name="success" type="stream">
+               <param name="contentType">application/octet-stream,image/x-png,image/gif,image/pjpeg,application/x-zip-compressed,text/plain</param>
+               <param name="contentDisposition">attachment;filename="${fileName}"</param>
+               <param name="inputName">downloadFile</param>
+            </result>
+        </action>
+        
+        <!-- 
+        <action name="imageUpload" class="com.jxnu.student.action.NewsAction" method="imageUpload">
+            <result name="success">/success.jsp</result>
+        </action>
+         -->
+        
+        <!-- newsAction end-->
+        
+        <!-- back  -->
+        <action name="getBack" class="com.jxnu.student.action.NewsAction" method="getBack">
+        	<result name="false">/back_error.jsp</result>
+            <result name="success">/back_menue_welcom.jsp</result>
+        </action>
+        
+        <action name="getNewsInput" class="com.jxnu.student.action.NewsAction" method="addNewsInput">
+            <result name="success">/back_menue_add.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        
+        <action name="addNews" class="com.jxnu.student.action.NewsAction" method="addNews">
+            <result name="success">/back_menue_success.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+
+        
+        <action name="b_query" class="com.jxnu.student.action.NewsAction" method="queryNews">
+            <result name="success">/back_menue_query.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="deleteNews" class="com.jxnu.student.action.NewsAction" method="deleteNews">
+            <result name="success">/back_menue_success.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="deleteMainPic" class="com.jxnu.student.action.NewsAction" method="deleteMainPic">
+            <result name="success">/back_menue_update.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="deleteFile" class="com.jxnu.student.action.NewsAction" method="deleteFile">
+            <result name="success">/back_menue_update.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="updateNews" class="com.jxnu.student.action.NewsAction" method="updateNews">
+            <result name="success">/back_menue_success.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="getUpdateNewsInput" class="com.jxnu.student.action.NewsAction" method="getUpdateInput">
+            <result name="success">/back_menue_update.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="getliyanb" class="com.jxnu.student.action.NewsAction" method="getliuyan_back">
+            <result name="success">/back_menue_liuyan.jsp</result>
+            <result name="success2">/back_menue_liuyan2.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="updateliyanb" class="com.jxnu.student.action.NewsAction" method="updateliuyan">
+            <result name="success"  type="redirect">/getliyanb.action?page=1</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="getliuyan" class="com.jxnu.student.action.NewsAction" method="getliuyan">
+            <result name="success">/liuyan.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="deleteliyanb" class="com.jxnu.student.action.NewsAction" method="deleteliuyan">
+            <result name="success" >/back_menue_success.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="addliuyan" class="com.jxnu.student.action.NewsAction" method="addliuyan">
+            <result name="success"  type="redirect">/getliuyan.action?page=1</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="queryuser" class="com.jxnu.student.action.NewsAction" method="getUser_back">
+            <result name="success" >/back_menue_query_user.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="deleteuser" class="com.jxnu.student.action.NewsAction" method="deleteUser">
+            <result name="success"  type="redirect">/queryuser.action?page=1</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="adduserInput" class="com.jxnu.student.action.NewsAction" method="addUser_input">
+            <result name="success" >/back_menue_user_add.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="adduser" class="com.jxnu.student.action.NewsAction" method="addUser_back">
+            <result name="success"  type="redirect">/queryuser.action?page=1</result>
+            <result name="false">/back_menue_user_add.jsp</result>
+        </action>
+        
+        <action name="updateuserInput" class="com.jxnu.student.action.NewsAction" method="updateUser_Input">
+            <result name="success" >/back_menue_user_update.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="updateuser" class="com.jxnu.student.action.NewsAction" method="updateUser_back">
+            <result name="success"  type="redirect">/queryuser.action?page=1</result>
+            <result name="false" >/back_menue_user_update.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <!-- back_end  -->
+        
+        <!-- picAction  -->
+        <action name="getPic" class="com.jxnu.student.action.PicAction" method="getpic">
+            <result name="success">/hot.jsp</result>
+        </action>
+        <!-- picAction  -->
+        
+        <!-- picAction  -->
+        <action name="login" class="com.jxnu.student.action.LoginAction" method="login">
+            <result name="success1" type="redirect">/mainPage.action</result>
+            <result name="success2" type="redirect">/getBack.action</result>
+        </action>
+        
+        <action name="loginOut" class="com.jxnu.student.action.LoginAction" method="loginOut">
+            <result name="success" type="redirect">/mainPage.action</result>
+        </action>
+        <!-- picAction  -->
+        <!-- pinyiAction -->
+        
+        <action name="getTeacher" class="com.jxnu.student.action.PinYiAction" method="getTeacherf">
+            <result name="success">/pinyi.jsp</result>
+        </action>
+        
+        <action name="getTeacherBack" class="com.jxnu.student.action.PinYiAction" method="getTeacherb">
+            <result name="success">/back_menue_query_teacher.jsp</result>
+            <result name="false">/back_menue_error.jsp</result>
+            <result name="false2">/back_error.jsp</result>
+        </action>
+        
+        <action name="doSuggestion" class="com.jxnu.student.action.PinYiAction" method="doSuggestion">
+            <result name="success" type="redirect">/getTeacher.action?collegeName=0</result>
+        </action>
+        
+        <action name="deleteTeacher" class="com.jxnu.student.action.PinYiAction" method="deleteTeacher">
+            <result name="success" type="redirect">/getTeacher.action?collegeName=0</result>
+        </action>
+        
+        <action name="addTeacher" class="com.jxnu.student.action.PinYiAction" method="addTeacher">
+            <result name="success" type="redirect">/getTeacher.action?collegeName=0</result>
+        </action>
+        
+        <action name="updateTeacher" class="com.jxnu.student.action.PinYiAction" method="updateTeacher">
+            <result name="success" type="redirect">/getTeacher.action?collegeName=0</result>
+        </action>
+        <!-- pinyiAction -->
+	</package>
+</struts>
